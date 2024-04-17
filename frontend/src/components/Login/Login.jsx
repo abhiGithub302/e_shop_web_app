@@ -3,9 +3,8 @@ import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import styles from "../../styles/styles";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-// import { server } from "../../server";
+import { server } from "../../server";
 import { toast } from "react-toastify";
-import "../../App.css"
 
 const Login = () => {
   const navigate = useNavigate();
@@ -18,7 +17,7 @@ const Login = () => {
 
     await axios
       .post(
-        // `${server}/user/login-user`,
+        `${server}/user/login-user`,
         {
           email,
           password,
@@ -39,13 +38,11 @@ const Login = () => {
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
-          {/* Login to your account */}
-          eBazaar.com
+          Login to your account
         </h2>
       </div>
       <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
         <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
-            <h1 className="text-3xl  mb-4">Sign in</h1>
           <form className="space-y-6" onSubmit={handleSubmit}>
             <div>
               <label
@@ -116,7 +113,7 @@ const Login = () => {
               <div className="text-sm">
                 <a
                   href=".forgot-password"
-                  className="font-medium text-red-600 hover:text-green-500"
+                  className="font-medium text-blue-600 hover:text-blue-500"
                 >
                   Forgot your password?
                 </a>
@@ -125,7 +122,7 @@ const Login = () => {
             <div>
               <button
                 type="submit"
-                className="group relative w-full h-[40px] flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700"
+                className="group relative w-full h-[40px] flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
               >
                 Submit
               </button>
