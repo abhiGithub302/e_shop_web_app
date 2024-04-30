@@ -2,9 +2,12 @@ import React from "react";
 import {
   AiFillFacebook,
   AiFillInstagram,
+  AiFillLinkedin,
   AiFillYoutube,
+  AiOutlineGithub,
   AiOutlineTwitter,
 } from "react-icons/ai";
+
 import { Link } from "react-router-dom";
 import {
   footercompanyLinks,
@@ -14,10 +17,10 @@ import {
 
 const Footer = () => {
   return (
-    <div className="bg-[#000] text-white">
-      <div className="md:flex md:justify-between md:items-center sm:px-12 px-4 bg-[#342ac8] py-7">
+    <div className="bg-[#232F3E] text-white">
+      <div className="md:flex md:justify-between md:items-center sm:px-12 px-4 bg-[#FFA500] py-7">
         <h1 className="lg:text-4xl text-3xl md:mb-0 mb-6 lg:leading-normal font-semibold md:w-2/5">
-          <span className="text-[#56d879]">Subscribe</span> us for get news{" "}
+          <span className="text-[#6266e2]">Subscribe</span> us for get news{" "}
           <br />
           events and offers
         </h1>
@@ -37,32 +40,58 @@ const Footer = () => {
       <div className="grid grid-cols-1 sm:gird-cols-3 lg:grid-cols-4 gap-6 sm:px-8 px-5 py-16 sm:text-center">
         <ul className="px-5 text-center sm:text-start flex sm:block flex-col items-center">
           <img
-            src="https://shopo.quomodothemes.website/assets/images/logo.svg"
+            class="w-40 h-auto"
+            src="https://vendor.eshopweb.store/assets/front_end/modern/img/logo/orange.png"
             alt=""
             style={{ filter: "brightness(0) invert(1)" }}
           />
           <br />
-          <p>The home and elements needeed to create beatiful products.</p>
+          <p>
+            "Welcome to our vibrant online marketplace, where convenience meets
+            endless possibilities! Browse through our curated selection of
+            products, from cutting-edge gadgets to timeless fashion pieces.".
+          </p>
           <div className="flex items-center mt-[15px]">
-            <AiFillFacebook size={25} className="cursor-pointer" />
-            <AiOutlineTwitter
+            <AiFillFacebook
+              size={25}
+              className="cursor-pointer"
+              onClick={() =>
+                window.open(
+                  "https://www.facebook.com/profile.php?id=100015186798408",
+                  "_blank"
+                )
+              }
+            />
+
+            <AiOutlineGithub
               size={25}
               style={{ marginLeft: "15px", cursor: "pointer" }}
+              onClick={() => window.open("https://github.com/abhiGithub302")}
+            />
+            <AiFillLinkedin
+              size={25}
+              style={{ marginLeft: "15px", cursor: "pointer" }}
+              onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/in/abhitechcode302?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                )
+              }
             />
             <AiFillInstagram
               size={25}
               style={{ marginLeft: "15px", cursor: "pointer" }}
-            />
-            <AiFillYoutube
-              size={25}
-              style={{ marginLeft: "15px", cursor: "pointer" }}
+              onClick={() =>
+                window.open(
+                  "https://www.instagram.com/abhi_techcode302?igsh=Ym1meHJ5NGcyc3Qy"
+                )
+              }
             />
           </div>
         </ul>
 
         <ul className="text-center sm:text-start">
           <h1 className="mb-1 font-semibold">Company</h1>
-          {footerProductLinks.map((link,index) => (
+          {footerProductLinks.map((link, index) => (
             <li key={index}>
               <Link
                 className="text-gray-400 hover:text-teal-400 duration-300
@@ -77,7 +106,7 @@ const Footer = () => {
 
         <ul className="text-center sm:text-start">
           <h1 className="mb-1 font-semibold">Shop</h1>
-          {footercompanyLinks.map((link,index) => (
+          {footercompanyLinks.map((link, index) => (
             <li key={index}>
               <Link
                 className="text-gray-400 hover:text-teal-400 duration-300
@@ -92,7 +121,7 @@ const Footer = () => {
 
         <ul className="text-center sm:text-start">
           <h1 className="mb-1 font-semibold">Support</h1>
-          {footerSupportLinks.map((link,index) => (
+          {footerSupportLinks.map((link, index) => (
             <li key={index}>
               <Link
                 className="text-gray-400 hover:text-teal-400 duration-300
@@ -110,7 +139,7 @@ const Footer = () => {
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10
          text-center pt-2 text-gray-400 text-sm pb-8"
       >
-        <span>© 2020 Becodemy. All rights reserved.</span>
+        <span>© 2024 eShop. All rights reserved.</span>
         <span>Terms · Privacy Policy</span>
         <div className="sm:block flex items-center justify-center w-full">
           <img

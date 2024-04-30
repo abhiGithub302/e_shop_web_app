@@ -14,8 +14,12 @@ const DashboardHeader = () => {
         <Link to="/dashboard">
           <img
             src="https://shopo.quomodothemes.website/assets/images/logo.svg"
+            // src ="https://www.eshope.fr/application/ressources/img/logo-eshope.png"
+            
+            
             alt=""
           />
+          
         </Link>
       </div>
       <div className="flex items-center">

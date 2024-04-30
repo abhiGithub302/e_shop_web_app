@@ -57,8 +57,11 @@ const Header = ({ activeHeading }) => {
         <div className="hidden 800px:h-[50px] 800px:my-[20px] 800px:flex items-center justify-between">
           <div>
             <Link to="/">
-              <img
-                src="https://shopo.quomodothemes.website/assets/images/logo.svg"
+              <img 
+
+                
+              class="w-40 h-auto" src="https://vendor.eshopweb.store/assets/front_end/modern/img/logo/orange.png"
+
                 alt=""
               />
             </Link>
@@ -70,7 +73,7 @@ const Header = ({ activeHeading }) => {
               placeholder="Search Product..."
               value={searchTerm}
               onChange={handleSearchChange}
-              className="h-[40px] w-full px-2 border-[#3957db] border-[2px] rounded-md"
+              className="h-[40px] w-full px-2 border-[#FFA500] border-[2px] rounded-md"
             />
             <AiOutlineSearch
               size={30}
@@ -110,7 +113,7 @@ const Header = ({ activeHeading }) => {
       <div
         className={`${
           active === true ? "shadow-sm fixed top-0 left-0 z-10" : null
-        } transition hidden 800px:flex items-center justify-between w-full bg-[#3321c8] h-[70px]`}
+        } transition hidden 800px:flex items-center justify-between w-full bg-[#232F3E] h-[70px]`}
       >
         <div
           className={`${styles.section} relative ${styles.noramlFlex} justify-between`}
@@ -217,7 +220,7 @@ const Header = ({ activeHeading }) => {
           <div>
             <Link to="/">
               <img
-                src="https://shopo.quomodothemes.website/assets/images/logo.svg"
+               class="w-40 h-auto mt-2" src="https://vendor.eshopweb.store/assets/front_end/modern/img/logo/orange.png"
                 alt=""
                 className="mt-3 cursor-pointer"
               />
