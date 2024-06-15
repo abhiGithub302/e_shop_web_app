@@ -3,9 +3,7 @@ import {
   AiFillFacebook,
   AiFillInstagram,
   AiFillLinkedin,
-  AiFillYoutube,
   AiOutlineGithub,
-  AiOutlineTwitter,
 } from "react-icons/ai";
 
 import { Link } from "react-router-dom";

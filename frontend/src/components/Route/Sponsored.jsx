@@ -30,7 +30,7 @@ const Sponsored = () => {
         </div>
         <div className="flex items-start">
           <img
-            src="https://www.vectorlogo.zone/logos/apple/apple-ar21.png"
+            src="https://logos-world.net/wp-content/uploads/2020/04/Sony-Logo.png"
             style={{width:"150px", objectFit:"contain"}}
             alt=""
           />
