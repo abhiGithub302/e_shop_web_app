@@ -71,10 +71,7 @@ const Faq = () => {
           {activeTab === 2 && (
             <div className="mt-4">
               <p className="text-base text-gray-500">
-                If you're not satisfied with your purchase, we accept returns
-                within 30 days of delivery. To initiate a return, please email
-                us at support@myecommercestore.com with your order number and a
-                brief explanation of why you're returning the item.
+              To return, request a return online, ship the item with the provided authorization number, and cover return shipping unless due to our error. Refunds are processed within 5-7 business days. Contact Customer Service within 48 hours for damaged or defective items. For help, email contactme@eshop.com or call +919999999999.
               </p>
             </div>
           )}
@@ -121,9 +118,7 @@ const Faq = () => {
           {activeTab === 3 && (
             <div className="mt-4">
               <p className="text-base text-gray-500">
-                You can track your order by clicking the tracking link in your
-                shipping confirmation email, or by logging into your account on
-                our website and viewing the order details.
+              To track your order, log in to your account and go to the "Orders" section. Select the order you want to track, and you will find the tracking number and a link to the courier's tracking page. Additionally, you will receive an email with tracking information once your order has shipped. For further assistance, contact our Customer Service team at trackorder@eshop.com or +919999999999.
               </p>
             </div>
           )}
@@ -170,9 +165,7 @@ const Faq = () => {
           {activeTab === 4 && (
             <div className="mt-4">
               <p className="text-base text-gray-500">
-                You can contact our customer support team by emailing us at
-                support@myecommercestore.com, or by calling us at (555) 123-4567
-                between the hours of 9am and 5pm EST, Monday through Friday.
+              For assistance, you can contact our Customer Support team via email at contactus@eshop.com or by phone at +919999999999. Our support team is available 24*7 to help with any questions or concerns you may have. 
               </p>
             </div>
           )}

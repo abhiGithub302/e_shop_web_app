@@ -9,7 +9,8 @@ const Hero = () => {
       style={{
         backgroundImage:
           // "url(https://themes.rslahmed.dev/rafcart/assets/images/banner-1.jpg)",
-          "url(https://dostguru.com/cdn-image/landing/revista-bigcommerce-Topbg.png)",
+          // "url(https://dostguru.com/cdn-image/landing/revista-bigcommerce-Topbg.png)",
+          "url(https://themes.rslahmed.dev/rafcart/assets/images/banner-3.jpg)",
           
           
           
