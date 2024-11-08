@@ -1,9 +1,9 @@
-eShopWay:-
+# eShopWay:- 
 
 eShopWay is a comprehensive e-commerce platform built with the MERN stack, designed to facilitate seamless online shopping experiences for customers, sellers, and administrators. The platform includes user-friendly features like real-time notifications, live chat support, and secure payment processing.
 
 
-Table of Contents
+## Table of Contents
 1.Project Overview
 2.Features
 3.Tech Stack
@@ -12,11 +12,11 @@ Table of Contents
 
 
 
-1.Project Overview:-
+# Project Overview:-
 eShopWay is a full-featured e-commerce application that allows customers to browse products, manage shopping carts, and complete secure payments. Sellers can manage their product listings, view customer orders, and track order status, while admins have control over the entire platform, including user management and order processing.
 
-2.Features:-
--->Customer Features
+# Features:-
+### Customer Features
 1.Sign-up & Login: JWT-based authentication.
 2.Product Catalog & Search: Browse and search for products.
 3.Shopping Cart: Add, remove, and manage items in the cart.
