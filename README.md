@@ -68,32 +68,42 @@ To get a local copy of this project up and running, follow these steps:
    
    git clone https://github.com/abhiGithub302/e_shop_web_app.git
 
-2.Navigate to the project directory:
+2. Navigate to the project directory:
    
    cd eShopWay
-3.Install dependencies for the backend:
+
+3. Install dependencies for the backend:
    
    cd backend
    npm install
 
-4.Install dependencies for the frontend:
+4. Install dependencies for the frontend:
    
    cd ../frontend
    npm install
 
 ### Environment Variables
--PORT = 8000
--DB_URL = 
--JWT_SECRET_KEY = 
--JWT_EXPIRES = 7d
--ACTIVATION_SECRET = 
--SMPT_SERVICE = gmail
--SMPT_HOST = smtp.gmail.com
--SMPT_PORT = 465 
--SMPT_PASSWORD = 
--SMPT_MAIL = 
--STRIPE_API_KEY = 
--STRIPE_SECRET_KEY = 
+- PORT = 8000
+- DB_URL = 
+- JWT_SECRET_KEY = 
+- JWT_EXPIRES = 7d
+- ACTIVATION_SECRET = 
+- SMPT_SERVICE = gmail
+- SMPT_HOST = smtp.gmail.com
+- SMPT_PORT = 465 
+- SMPT_PASSWORD = 
+- SMPT_MAIL = 
+- STRIPE_API_KEY = 
+- STRIPE_SECRET_KEY = 
+
+### Usage
+To start the development server:
+ 1. Backend: Start the server from the backend directory:
+ - npm run dev
+ 2. Frontend: Start the frontend from the frontend directory:
+ - npm start
+
+
 
 
 
