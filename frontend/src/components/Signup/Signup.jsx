@@ -7,7 +7,7 @@ import axios from "axios";
 import { server } from "../../server";
 import { toast } from "react-toastify";
 
-const Singup = () => {
+const Signup = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
@@ -15,32 +15,43 @@ const Singup = () => {
   const [avatar, setAvatar] = useState(null);
 
   const handleFileInputChange = (e) => {
-    const reader = new FileReader();
+    const file = e.target.files[0];
+    if (file) {
+      const reader = new FileReader();
 
-    reader.onload = () => {
-      if (reader.readyState === 2) {
-        setAvatar(reader.result);
-      }
-    };
+      reader.onload = () => {
+        if (reader.readyState === 2) {
+          setAvatar(reader.result);
+        }
+      };
 
-    reader.readAsDataURL(e.target.files[0]);
+      reader.readAsDataURL(file);
+    } else {
+      setAvatar(null); // Clear avatar if no file is selected
+    }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    axios
-      .post(`${server}/user/create-user`, { name, email, password, avatar })
-      .then((res) => {
-        toast.success(res.data.message);
-        setName("");
-        setEmail("");
-        setPassword("");
-        setAvatar();
-      })
-      .catch((error) => {
-        toast.error(error.response.data.message);
-      });
+    // Create a form data object to send along with the POST request
+    const data = {
+      name,
+      email,
+      password,
+      avatar: avatar || null // Ensure avatar is null if not provided
+    };
+
+    try {
+      const res = await axios.post(`${server}/user/create-user`, data);
+      toast.success(res.data.message);
+      setName("");
+      setEmail("");
+      setPassword("");
+      setAvatar(null); // Reset avatar state after successful submission
+    } catch (error) {
+      toast.error(error.response.data.message);
+    }
   };
 
   return (
@@ -55,7 +66,7 @@ const Singup = () => {
           <form className="space-y-6" onSubmit={handleSubmit}>
             <div>
               <label
-                htmlFor="email"
+                htmlFor="name"
                 className="block text-sm font-medium text-gray-700"
               >
                 Full Name
@@ -63,7 +74,7 @@ const Singup = () => {
               <div className="mt-1">
                 <input
                   type="text"
-                  name="text"
+                  name="name"
                   autoComplete="name"
                   required
                   value={name}
@@ -130,7 +141,9 @@ const Singup = () => {
               <label
                 htmlFor="avatar"
                 className="block text-sm font-medium text-gray-700"
-              ></label>
+              >
+                Upload Avatar (optional)
+              </label>
               <div className="mt-2 flex items-center">
                 <span className="inline-block h-8 w-8 rounded-full overflow-hidden">
                   {avatar ? (
@@ -168,7 +181,7 @@ const Singup = () => {
                 Submit
               </button>
             </div>
-            <div className={`${styles.noramlFlex} w-full`}>
+            <div className={`${styles.normalFlex} w-full`}>
               <h4>Already have an account?</h4>
               <Link to="/login" className="text-blue-600 pl-2">
                 Sign In
@@ -181,4 +194,4 @@ const Singup = () => {
   );
 };
 
-export default Singup;
+export default Signup;
