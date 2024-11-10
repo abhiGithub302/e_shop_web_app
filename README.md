@@ -65,20 +65,20 @@ To get a local copy of this project up and running, follow these steps:
 ### Installation
 
 1. Clone the repository:
-   
+   ```bash
    git clone https://github.com/abhiGithub302/e_shop_web_app.git
 
 2. Navigate to the project directory:
-   
+   ```bash
    cd eShopWay
 
 3. Install dependencies for the backend:
-   
+   ```bash
    cd backend
    npm install
 
 4. Install dependencies for the frontend:
-   
+   ```bash
    cd ../frontend
    npm install
 
