@@ -10,7 +10,7 @@ require("dotenv").config({
 });
 
 app.use(cors({
-  origin: 'https://e-shop-web-appfrontend.vercel.app',
+  origin: 'https://e-shop-web-appfrontend.vercel.app/',
   methods: ['GET', 'POST'],
   credentials: true
 }));
@@ -22,7 +22,7 @@ app.get("/", (req, res) => {
 
 const io = socketIO(server, {
   cors: {
-    origin: 'https://e-shop-web-appfrontend.vercel.app',
+    origin: 'https://e-shop-web-appfrontend.vercel.app/',
     methods: ['GET', 'POST'],
     credentials: true
   },
