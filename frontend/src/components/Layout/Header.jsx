@@ -218,13 +218,13 @@ const Header = ({ activeHeading }) => {
             />
           </div>
           <div>
-            <Link to="/">
-              <img
-               class="w-20 h-auto mt-2" src="https://vendor.eshopweb.store/assets/front_end/modern/img/logo/orange.png"
-                alt=""
-                className="mt-3 cursor-pointer"
-              />
-            </Link>
+          <Link to="/">
+      <img
+        src="https://vendor.eshopweb.store/assets/front_end/modern/img/logo/orange.png"
+        alt="Logo"
+        className="w-[50px] h-auto sm:w-[70px] md:w-[100px] lg:w-[120px] xl:w-[150px] mt-3 cursor-pointer"
+      />
+    </Link>
           </div>
           <div>
             <div
