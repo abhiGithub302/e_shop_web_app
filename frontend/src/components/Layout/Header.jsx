@@ -220,7 +220,7 @@ const Header = ({ activeHeading }) => {
           <div>
             <Link to="/">
               <img
-               class="w-40 h-auto mt-2" src="https://vendor.eshopweb.store/assets/front_end/modern/img/logo/orange.png"
+               class="w-20 h-auto mt-2" src="https://vendor.eshopweb.store/assets/front_end/modern/img/logo/orange.png"
                 alt=""
                 className="mt-3 cursor-pointer"
               />
